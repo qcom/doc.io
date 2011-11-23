@@ -1,10 +1,11 @@
 {
-    "name": "application-name"
+    "name": "doc.io"
   , "version": "0.0.1"
   , "private": true
   , "dependencies": {
       "express": "2.5.1"
     , "stylus": ">= 0.0.1"
     , "jade": ">= 0.0.1"
+    , "express-resource": ">= 0.2.3"
   }
 }
