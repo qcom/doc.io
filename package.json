@@ -7,5 +7,6 @@
     , "stylus": ">= 0.0.1"
     , "jade": ">= 0.0.1"
     , "express-resource": ">= 0.2.3"
+    , "redis": ">= 0.7.1"
   }
 }
