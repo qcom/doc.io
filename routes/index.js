@@ -1,5 +1,10 @@
 // GET Home Page
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Express' })
+  if (session.user) {
+    console.log('done here');
+  }
+  else {
+    res.render('index', { title: 'Express' })
+  }
 };
