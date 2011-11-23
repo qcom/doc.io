@@ -33,6 +33,10 @@ app.configure('production', function(){
 
 app.get('/', routes.index);
 
+app.get('/about', routes.about);
+
+app.get('/contact', routes.contact);
+
 app.resource('users', require('./routes/user'));
 
 app.listen(process.env.C9_PORT);
