@@ -45,7 +45,7 @@ function create(req, res) {
         client.hmset('uid:' + uid, {
           username: data.username,
           salt: salt,
-          pass: auth.hash(data.password, salt);
+          pass: auth.hash(data.password, salt)
         }, function() {
           res.json({register: true});
         });
