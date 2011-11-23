@@ -31,6 +31,12 @@ app.configure('production', function(){
 
 // Routes
 
+app.dynamicHelpers({
+  session: function(req, res){
+    return req.session;
+  }
+});
+
 app.get('/', routes.index);
 
 app.resource('users', require('./routes/user'));
