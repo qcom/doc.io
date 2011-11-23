@@ -1,7 +1,4 @@
-
-/*
- * GET home page.
- */
+// GET Home Page
 
 exports.index = function(req, res){
   res.render('index', { title: 'Express' })
