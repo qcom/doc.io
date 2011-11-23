@@ -1,2 +1,24 @@
-h1= title
-p Welcome to #{title}
+!!!
+html
+  head
+    title doc.io
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+  body
+    .topbar
+      .fill
+        .container
+          a(class='brand', href='#') doc.io
+          ul(class='nav')
+            li(class='active')
+              a(href='#') Home
+            li
+              a(href='#about') About
+            li
+              a(href='#contact') Contact
+    .container
+      .hero-unit
+        h1 doc.io
+        p Sexy, realtime, collaborative document editor built with node, redis, and couch.
+        p
+          a(class='btn primary large') learn more
