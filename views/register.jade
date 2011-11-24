@@ -13,10 +13,6 @@ html
             li(class='active')
               a(href='#') Home
             li
-              a(href='#about') About
-            li
-              a(href='#contact') Contact
-            li
               a(href='#register') Register
     .container
       form(id='registerForm', method='post', action='/register', class='form-stacked')
@@ -25,16 +21,16 @@ html
           .clearfix
             label First Name
             .input
-              input(class='xlarge', id='firstName', name='firstName', size='30', type='text')
+              input(class='xlarge', id='firstName', name='firstName', size='12', type='text')
             br
             label Last Name
             .input
-              input(class='xlarge', id='lastName', name='lastName', size='30', type='text')
+              input(class='xlarge', id='lastName', name='lastName', size='12', type='text')
         fieldset
           legend Account
           .clearfix
             label Email
             .input
-              input(class='xlarge', id='email', name='name', size='30', type='email')
+              input(class='xlarge', id='email', name='name', size='20', type='email')
           .actions
-            input(type='submit', class='btn large primary', value='Register')
+            input(type='submit', class='btn primary', value='Register')
