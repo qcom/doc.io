@@ -33,7 +33,7 @@ app.configure('production', function(){
 
 app.get('/', routes.index);
 
-app.get('/', routes.register);
+app.get('/register', routes.register);
 
 app.resource('users', require('./routes/user'));
 
