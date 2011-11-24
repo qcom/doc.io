@@ -33,9 +33,7 @@ app.configure('production', function(){
 
 app.get('/', routes.index);
 
-app.get('/about', routes.about);
-
-app.get('/contact', routes.contact);
+app.get('/', routes.register);
 
 app.resource('users', require('./routes/user'));
 

@@ -1,0 +1,38 @@
+!!!
+html
+  head
+    title doc.io
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    .topbar
+      .fill
+        .container
+          a(class='brand', href='#') doc.io
+          ul(class='nav')
+            li(class='active')
+              a(href='#') Home
+            li
+              a(href='#about') About
+            li
+              a(href='#contact') Contact
+            li
+              a(href='#register') Register
+    .container
+      form(id='registerForm', method='post', action='/register', class='form-stacked')
+        fieldset
+          legend Personal
+          .clearfix
+            label First Name
+            .input
+              input(class='xlarge', id='firstName', name='firstName', size='30', type='text')
+            br
+            label Hodge Name
+            .input
+              input(class='xlarge', id='lastName', name='lastName', size='30', type='text')
+        fieldset
+          legend Account
+          .clearfix
+            label Email
+            .input
+              input(class='xlarge', id='email', name='name', size='30', type='email')
